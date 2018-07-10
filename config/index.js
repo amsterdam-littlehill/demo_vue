@@ -12,38 +12,6 @@ module.exports = {
     assetsPublicPath: '/',
     //跨域服务调用配置
     proxyTable: {
-      "/bss-customer-query": {
-        target: "http://172.21.2.40:9090", 	// 接口的域名
-        //secure: false,  									// 如果是https接口，需要配置这个参数
-        changeOrigin: true, 								// 如果接口跨域，需要进行这个参数配置
-        pathRewrite: {
-          "": ""
-        }
-      },
-      "/bss-base-query": {
-        target: "http://172.21.2.40:9090", 	// 接口的域名
-        //secure: false,  									// 如果是https接口，需要配置这个参数
-        changeOrigin: true, 								// 如果接口跨域，需要进行这个参数配置
-        pathRewrite: {
-          "": ""
-        }
-      },
-      "/login": {
-        target: "http://172.21.2.40:9090", 	// 接口的域名
-        //secure: false,  									// 如果是https接口，需要配置这个参数
-        changeOrigin: true, 								// 如果接口跨域，需要进行这个参数配置
-        pathRewrite: {
-          "": ""
-        }
-      },
-      "/bss-offer-offermod-query": {
-        target: "http://172.21.2.40:9090", 	// 接口的域名
-        //secure: false,  									// 如果是https接口，需要配置这个参数
-        changeOrigin: true, 								// 如果接口跨域，需要进行这个参数配置
-        pathRewrite: {
-          "": ""
-        }
-      }
     },
 
     // Various Dev Server settings
